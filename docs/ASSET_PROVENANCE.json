@@ -1,0 +1,30 @@
+{
+  "assets": [
+    {
+      "file": "assets/buildings/isometric_buildings_atlas_v1.png",
+      "sha256": "ea3fd8c7c6e9163d8b52ba0fe8cf057c7007cde3b15d14857bbcdd553d0aaff9",
+      "generated_on": "2026-09-13",
+      "generator": "OpenAI image generation through Codex",
+      "generation_prompt": "Use case: stylized-concept\nAsset type: original game-development visual reference and compact sprite atlas source\nPrimary request: A clean 4 by 5 atlas of 20 separate original miniature isometric building sprites for a compact modern city-builder game: house, apartment/shop, power plant with stacks, water treatment tank, fire station, farm with barn and crop rows, materials plant, refinery tanks, import warehouse, defense factory, university, science lab dish, barracks, vehicle factory, drone factory, airbase hangar with runway, SAM radar launcher, missile silo, plus two generic variants. Each sprite is a complete tiny isometric structure with roof planes, front and side walls, gentle pixel-art-style shading, strong silhouettes, and a small soft ground shadow. No text, no labels, no logos, no copied designs. Each item centered in its own evenly-spaced cell and isolated from all others.\nScene/backdrop: genuinely transparent background.\nStyle/medium: original crisp low-detail pixel-art-inspired isometric game sprites, not photorealistic.\nComposition/framing: uniformly spaced sprite atlas, all structures fully visible, no clipping.\nColor palette: cheerful but practical city-builder palette, distinct roof and wall colors.\nConstraints: transparent background, no UI, no terrain tiles, no characters, no watermarks, no brand references.",
+      "evidence": "Exact SHA-256 match to cached generation output; completed generation record and original-art request recovered during the October 2026 review."
+    },
+    {
+      "file": "assets/terrain/isometric_terrain_atlas_v1.png",
+      "sha256": "e2a2684670934218d4ef5104c236d9e7a69cd438907e541f5144ee9b86aac95c",
+      "generated_on": "2026-09-13",
+      "generator": "OpenAI image generation through Codex",
+      "generation_prompt": "Use case: stylized-concept\nAsset type: original isometric terrain tile sprite atlas for a city-builder game\nPrimary request: a clean 3 by 2 atlas of six separate original isometric diamond terrain tile sprites: bright grass plains, dense forest with several small trees, raised earthy hills with ridges and rocks, blue river water with ripples, sandy grassy coast shoreline with water, and dark scorched burned ground. Each is a complete 2:1 isometric diamond tile with pixel-art-inspired shading, subtle texture, crisp clean edges, and no buildings, roads, or labels. Every tile must be centered in its own equally sized cell and fully isolated.\nScene/backdrop: genuinely transparent background.\nStyle/medium: original compact low-detail pixel-art-inspired isometric game art; no copied designs.\nComposition/framing: 3 columns by 2 rows atlas, equal cell spacing.\nConstraints: transparent background, no text, no logos, no characters, no UI, no watermarks.",
+      "evidence": "Exact SHA-256 match to cached generation output; completed generation record and original-art request recovered during the October 2026 review."
+    },
+    {
+      "file": "assets/units/isometric_units_atlas_v1.png",
+      "sha256": "281b997641d5aba6b773688069c619eab5e8de1d325bcf11d4b12390f8e12f25",
+      "generated_on": "2026-09-13",
+      "generator": "OpenAI image generation through Codex",
+      "generation_prompt": "Use case: stylized-concept\nAsset type: original isometric military unit sprite atlas for a compact city-builder strategy game\nPrimary request: a clean 4 by 2 atlas with seven separate original miniature isometric military unit sprites and one empty transparent cell: infantry squad, tank with hull turret barrel, artillery chassis with long cannon, angular robot ground unit, compact recon drone, narrow swept-wing fighter, and broad-wing bomber. Each is a complete readable map sprite with crisp pixel-art-inspired shading, dark outline, and a small soft shadow. Units should be unmistakably different by silhouette and have no buildings, text, labels, logos, or copied designs.\nScene/backdrop: genuinely transparent background.\nStyle/medium: original low-detail pixel-art-inspired isometric game sprites.\nComposition/framing: evenly spaced 4 columns by 2 rows, each unit fully visible and centered in its own isolated cell.\nConstraints: transparent background, no terrain, no UI, no watermark.",
+      "evidence": "Exact SHA-256 match to cached generation output; completed generation record and original-art request recovered during the October 2026 review."
+    }
+  ],
+  "owner_confirmation": "On 30 October 2026, Tyler confirmed this was his own project with Codex assistance and no outside reference images, collaborator code, employer/client material, or other third-party source files.",
+  "limits": "The old raw invocation stream is unavailable; recovered generation records retain revised prompts and outputs. Embedded C2PA signatures were not independently authenticated. No exclusive-copyright or non-infringement guarantee is claimed."
+}

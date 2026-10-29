@@ -1,0 +1,12 @@
+# Godot 4 imports and editor state. Keep .gd.uid and .png.import source metadata.
+.godot/
+export_credentials.cfg
+builds/
+*.log
+.DS_Store
+
+# Local saves, captures and validation output are not project sources.
+saves/
+captures/
+test-results/
+__pycache__/

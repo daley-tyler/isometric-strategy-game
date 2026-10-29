@@ -1,0 +1,32 @@
+name: Godot validation
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Check out source
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Download verified Godot 4.7.2
+        run: bash tools/check-engine-download.sh
+      - name: Import, validate, and start main scene
+        run: >-
+          python3 tools/validate.py
+          --godot "$RUNNER_TEMP/godot/Godot_v4.7.2-stable_linux.x86_64"
+          --results-dir test-results
+      - name: Retain diagnostic logs
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: godot-validation
+          path: test-results
+          if-no-files-found: ignore
+          retention-days: 7
