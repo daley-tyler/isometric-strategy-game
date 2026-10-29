@@ -4,7 +4,7 @@ I’m developing a Godot prototype that combines city building, resource product
 
 This is a playable single-player prototype with one AI opponent. It is still a development project, with simple economic rules and some developer controls. I developed the design and used Codex for implementation, testing, review, and artwork generation.
 
-![A manually built city and a selected infantry unit in the running game](docs/screenshots/unit-orders.png)
+![A manually built city and a selected infantry unit in the running game](docs/screenshots/unit-orders.jpg)
 
 The screenshots show the actual Godot game. The [demo notes](docs/DEMO.md) explain what was exercised and how each capture was produced.
 
