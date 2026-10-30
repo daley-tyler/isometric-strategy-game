@@ -20,7 +20,7 @@ python3 tools/validate.py --godot /path/to/Godot
 
 The runner copies project sources and the installed engine into temporary locations. A portable-engine marker isolates editor data/settings/cache, while the project import cache lives in the temporary project. A random, owned user-data directory is checked against `OS.get_user_data_dir()` before import or gameplay. Linux additionally uses temporary XDG directories. Temporary runtime and save directories are removed afterward; results remain in the printed log directory. The campaign fixture also uses a process-specific temporary directory.
 
-The workflow in `.github/workflows/godot-validation.yml` pins the engine version, verifies the official Linux ZIP checksum, uses pinned GitHub action revisions, and grants read-only repository permissions. Workflow syntax, shell syntax, the checksum pin, and its validation entry point were checked locally. Hosted Actions and a Linux run have not occurred; no hosted success badge or result is claimed.
+The workflow in `.github/workflows/godot-validation.yml` pins the engine version, verifies the official Linux ZIP checksum, uses pinned GitHub action revisions, and grants read-only repository permissions. [Hosted Actions run 40983613869](https://github.com/daley-tyler/isometric-strategy-game/actions/runs/40983613869) passed on Ubuntu 24.04 with Godot 4.7.2: twelve suites plus isolation, import, and main-scene startup, including all 69 save-safety checks. The diagnostic artifact upload also succeeded. A fresh public clone passed the same fifteen checks on macOS. Packaged exports, Windows, full campaign play, and sustained large-army performance remain outside this validation.
 
 ## Actual manual gameplay
 

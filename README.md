@@ -78,7 +78,7 @@ python3 tools/playtest.py --godot /path/to/Godot --log-file test-results/playtes
 
 That session uses disposable saves. Closing its window discards them; ordinary play through the editor uses the persistent directory described above.
 
-The GitHub Actions workflow pins Godot 4.7.2, checks the Linux archive against the official SHA-512 digest, and runs the same validator on Ubuntu. Its YAML, download-script syntax, checksum pin, and validation entry point were checked locally. A hosted Actions run has not happened yet.
+The GitHub Actions workflow pins Godot 4.7.2, checks the Linux archive against the official SHA-512 digest, and runs the same validator on Ubuntu. [Hosted Actions run 40983613869](https://github.com/daley-tyler/isometric-strategy-game/actions/runs/40983613869) passed on Ubuntu 24.04 with Godot 4.7.2. All fifteen checks passed, including twelve suites and 69 save-safety cases; the diagnostic logs were uploaded successfully.
 
 The suites cover world determinism, coordinate picking, services and development, resource calculations, research progression, manufacturing, pathfinding and combat, strategic weapons, campaign outcomes, persistence, AI policy, UI routing, and rendering integration. The reliability suite adds regression cases for competing missile costs, removed silos, AI save/load behavior, city object lifetime, route reuse, and batched chunk updates. See [validation notes](docs/VALIDATION.md) for the distinction between automated checks and actual playtesting.
 
