@@ -2,7 +2,7 @@
 
 I’m developing a Godot prototype that combines city building, resource production, and military strategy on one isometric map. I wanted the civilian and military systems to share the same world: roads connect services, industry supplies manufacturing, and units fight over territory and capitals.
 
-This is a playable single-player prototype with one AI opponent. It is still a development project, with simple economic rules and some developer controls. I developed the design and used Codex for implementation, testing, review, and artwork generation.
+This is a playable single-player prototype with one AI opponent. It is still a development project, with simple economic rules and some developer controls. The [development history](docs/PROVENANCE.md) explains the design and implementation origins.
 
 ![A manually built city and a selected infantry unit in the running game](docs/screenshots/unit-orders.jpg)
 
