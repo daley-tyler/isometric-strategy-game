@@ -1,8 +1,6 @@
 # Isometric Strategy Game
 
-I’m developing a Godot prototype that combines city building, resource production, and military strategy on one isometric map. I wanted the civilian and military systems to share the same world: roads connect services, industry supplies manufacturing, and units fight over territory and capitals.
-
-This is a playable single-player prototype with one AI opponent. It is still a development project, with simple economic rules and some developer controls. The [development history](docs/PROVENANCE.md) explains the design and implementation origins.
+I built this single-player Godot prototype to see how city building and combat could share one isometric map. Roads connect services, industry supplies manufacturing, and units fight over territory and capitals. One AI opponent builds and fights using the same simulation rules.
 
 ![A manually built city and a selected infantry unit in the running game](docs/screenshots/unit-orders.jpg)
 
@@ -39,7 +37,7 @@ To start a city, place connected roads, put a power plant and water facility bes
 
 Select a barracks to queue infantry. Once production finishes, deploy it from the Forces panel while its facility or your capital is selected. Select the unit, then right-click empty ground to move or an enemy to attack. The command bar also provides Move, Attack, Defend, and Stop.
 
-Save Game, Load Game, and Load Latest Autosave are in the right panel. This review copy uses the custom `user://` directory **City Game Portfolio Review**, separate from the original prototype’s directory. On macOS it is normally `~/Library/Application Support/City Game Portfolio Review/`. Manual saves use `saves/manual_save.json`; autosaves rotate every 120 seconds of active simulation.
+Save Game, Load Game, and Load Latest Autosave are in the right panel. The game uses the custom `user://` directory **City Game Portfolio Review**, separate from the original prototype’s directory. On macOS it is normally `~/Library/Application Support/City Game Portfolio Review/`. Manual saves use `saves/manual_save.json`; autosaves rotate every 120 seconds of active simulation.
 
 The [controls reference](docs/CONTROLS.md) lists keyboard shortcuts, including developer-only force spawning.
 
@@ -88,8 +86,6 @@ The economy is intentionally simple. Food cannot fall below zero, but starvation
 
 The initial design included broader future ideas; those are not completed features. Long campaign balance, packaged builds, other operating systems, and large armies have not been validated. The remaining rule and test limits are described in the validation notes, including uninterrupted-capital-capture behavior and developed-zone bulldozing.
 
-The three sprite atlases were generated for this project through Codex. Their generation prompts and cached outputs have been recovered and matched to the current files by SHA-256. I confirmed that no outside reference images, external packs, collaborator code, or employer/client material were supplied. The [asset notes](docs/ASSETS.md) give the provenance and redistribution assessment.
-
-The [development history and attribution notes](docs/PROVENANCE.md) explain why the public repository starts with a reviewed snapshot.
+The three sprite atlases were generated for this project through Codex. The [asset notes](docs/ASSETS.md) record the generation evidence and redistribution assessment. The [development history](docs/PROVENANCE.md) explains the design, implementation and Codex assistance.
 
 No project source-code or artwork reuse license has been selected. Godot Engine has its own [MIT license](https://godotengine.org/license/); that does not assign the same license to this project.
